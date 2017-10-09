@@ -19,8 +19,6 @@ args = vars(ap.parse_args())
 # load the input image from disk
 image = cv2.imread(args["image"])
 
-t = time.time()
-
 # load the class labels from disk
 # use "\n" as delimiter. split("\n") will return a list of lines for each label and data
 # strip() will remove whitespace characters from the beginning and end of each line
@@ -48,7 +46,7 @@ print("[INFO] classification took {:.5} seconds".format(end - start))
 
 # sort the indexes of the probabilities in descending order (higher
 # probabilitiy first) and grab the top-5 predictions
-idxs = np.argsort(preds[0])[::-1][:5]
+idxs = np.argsort(preds[0])[::-1][:10]
 
 # loop over the top-5 predictions and display them
 for (i, idx) in enumerate(idxs):
@@ -63,8 +61,6 @@ for (i, idx) in enumerate(idxs):
 	# console	
 	print("[INFO] {}. label: {}, probability: {:.5}".format(i + 1,
 		classes[idx], preds[0][idx]))
-
-print(time.time()-t)
 
 # display the output image
 cv2.imshow("Image", image)
