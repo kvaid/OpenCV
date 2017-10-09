@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "video_facedetect", "video_facedetect\video_facedetect.pyproj", "{C8553A63-6D9C-4506-BFD5-E259D0B8F53F}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "deeplearning_opencvdnn", "deeplearning_opencvdnn\deeplearning_opencvdnn.pyproj", "{CAEDAF0D-38F5-4408-9E33-5F9084797F8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C8553A63-6D9C-4506-BFD5-E259D0B8F53F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C8553A63-6D9C-4506-BFD5-E259D0B8F53F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAEDAF0D-38F5-4408-9E33-5F9084797F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAEDAF0D-38F5-4408-9E33-5F9084797F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
